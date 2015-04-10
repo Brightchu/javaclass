@@ -21,9 +21,12 @@ public class DrawACrate
 {
     public static void main(String[] args)
     {
-        Rectangle face = new Rectangle(20, 30, 100, 40);
+		// create a Rectangle
+        Rectangle face = new Rectangle(20, 30, 100, 40);  
         face.draw();
-        Line line1 =new Line(20,30,50,10);
+		
+		// create a Line
+        Line line1 =new Line(20,30,50,10);                
         line1.draw();
 		Line line2 =new Line(20+100,30,50+100,10);
         line2.draw();
@@ -34,5 +37,8 @@ public class DrawACrate
 		Line line5 =new Line(20+100,30+40,150,50);
         line5.draw();
 		
+		// create text
+		Text topSecret= new Text(20,30,"TOP SECRET");
+		topSecret.draw();		
     }
 }
