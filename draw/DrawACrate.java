@@ -39,6 +39,24 @@ public class DrawACrate
 		
 		// create text
 		Text topSecret= new Text(20,30,"TOP SECRET");
-		topSecret.draw();		
+		topSecret.draw();	
+
+		// color intro
+		Rectangle box = new Rectangle(60, 120, 20, 30);
+        Rectangle box2 = new Rectangle(80, 150, 20, 30);
+        box.draw();
+        box2.draw();
+       
+	    //set the color by RGB
+        box.setColor(new Color(255, 0, 0));
+        box.draw();
+        box2.setColor(new Color(0, 255, 0));
+        box2.fill();
+		
+		Line redLine= new Line(60 ,200,100,200);
+		//set as the Defined color
+		redLine.setColor(Color.RED);
+		redLine.draw();
+		
     }
 }
