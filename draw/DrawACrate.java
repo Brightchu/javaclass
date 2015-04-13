@@ -58,5 +58,10 @@ public class DrawACrate
 		redLine.setColor(Color.RED);
 		redLine.draw();
 		
+		//Translate, getWidth, getX in Rectangle
+		Rectangle box3=new Rectangle(80, 150, 20, 30);
+		box3.translate(25,25);
+		box3.draw();
+		System.out.println("box width is "+box3.getWidth()+" \nbox X coordinate is "+box3.getX());		
     }
 }
